@@ -20,10 +20,10 @@ $(document).ready(function(){
 
         if(nextdot.length){
             currentdot.removeClass('active1').css('opacity', 1);
-            nextdot.addClass('active1').css('opacity', 0.2);
+            nextdot.addClass('active1').css('opacity', 0.5);
         } else {
             currentdot.removeClass('active1').css('opacity', 1);
-            $('.slider-dots img:first').addClass('active1').css('opacity', 0.2);
+            $('.slider-dots img:first').addClass('active1').css('opacity', 0.5);
         }
     });
 });

@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.burger {
+    float: right;
+    margin-top: 20px;
+    width: 30px;
+    cursor: pointer;
+    /* transition: 0.3s; */
+}
+
+span {
+    display: block;
+    height: 3px;
+    background-color: #061C2C;
+    margin-bottom: 8px;
+}
+
+.navbar {
+    height: 170px;
+}
+
+nav {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.logo {
+    width: 220px;
+}
+
+.container {
+    display: block;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.slider-images {
+    z-index: 20;
+    display: block;
+    max-width: 1620px;
+    width: 100%;
+    position: relative;
+}
+
+.slider-dots {
+    z-index: 30;
+    top: 90%;
+    position: absolute;
+    display: block;
+    text-align: right;
+    max-width: 1620px;
+    width: 100%;
+    margin-right: 7rem;
+}
+
+#img1 {
+    width: 100%;
+}
+
+.slider-images .slider-dots img {
+    display: inline;
+}
+
+.slider-images .slider-dots img.active1 {
+    opacity: 0.2;
+}
+
+.slider-images img {
+    display: none;
+}
+
+.slider-images img.active1 {
+    display: inline-block;
+}
+
+.slider-images img.active {
+    display: inline-block;
+}
+
+.slider:before {
+    content: "";
+    width: 50%;
+    background-color: #244AC2;
+    position: absolute;
+    height: 120px;
+    left: 0%;
+    top: 50%;
+    display: block;
+    margin-top: -3.05rem;
+}
+
+.slider:after {
+    content: "";
+    width: 50%;
+    background-color: black;
+    position: absolute;
+    height: 120px;
+    display: block;
+    right: 0%;
+    top: 50%;
+    margin-top: -3.05rem;
+}
+
+.arrow {
+    background-image: url(https://visiofund.co.za/wp-content/themes/visio/images/slider-next.svg);
+    position: absolute;
+    top: 56%;
+    right: 2%;
+    margin-top: -6rem;
+    cursor: pointer;
+    z-index: 30;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h3, .slider-text {
+    position: absolute;
+    top: 50%;
+    font-size: 35px;
+    background-color: #244AC2;
+    color: white;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: -3%;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+#second-sec {
+    max-width: 1550px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+#second-sec p {
+    width: 60%;
+    float: left;
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 0.75rem;
+    padding-right: 2%;
+    line-height: 2.25rem;
+}
+
+.rightimg {
+    float: right;
+    margin-right: 0.75rem;
+}
+
+.third-section {
+    margin-top: 20rem;
+    margin-bottom: 6%;
+}
+
+.blocks-container {
+    max-width: 1550px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blocks {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    padding: 0;
+    /* height: 12.5rem; */
+}
+
+.bbb {
+    display: inline;
+}
+
+#bb {
+    padding-left: 1.5%;
+}
+
+.block-cont {
+    display: inline-grid;
+    width: 32%;
+    background-color: #061C2C;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    height: 13rem;
+}
+
+.block-cont p {
+    width: 20rem;
+}
+
+#middleblock {
+    width: 12rem;
+}
+
+.small-blocks-container {
+    width: 100%;
+    max-width: 1500px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-blocks {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+
+.small-block-cont {
+    display: inline-flex;
+    width: 32%;
+    /* font-size: 15px; */
+}
+
+.small-block-cont .text {
+    float: left;
+    width: 50%;
+    background-color: #244AC2;
+    color: white;
+    padding: 0.7rem;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#text1 {
+    margin-right: 1rem;
+}
+
+.smlarrow {
+    float: right;
+    /* padding-right: 0.5rem; */
+    margin-top: 0.1rem;
+}
+
+.smlblock {
+    display: inline;
+}
+
+#smlblock {
+    padding-left: 1.5%;
+}
+
+/* .small-block-cont .text1 {
+    
+} */
+
+/* 
+.slider:before {
+    left: 0;
+    top: 50%;
+    margin-top: -60px;
+    position: absolute;
+    width: 50%;
+    background-color: #244AC2;
+    display: block;
+    content: "";
+    height: 120px;
+} */
+
+@media screen and (max-width: 1435px){
+    .small-block-cont {
+        display: inline-block;
+        width: 32%;
+    }
+
+    .small-block-cont .text {
+        width: 100%;
+        margin-bottom: 1rem;
+        /* margin-left: 0.3rem; */
+    }
+
+    .block-cont {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .block-cont p {
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width: 925px){
+    .block-cont {
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .small-blocks {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    nav {
+        padding-top: 2%;
+    }
+}
+
+/* @media screen and (max-width: 1100px) {
+
+} */
+
+@media screen and (max-width: 925px) {
+    /* nav {
+        padding-top: 2%;
+    } */
+
+    .logo {
+        width: 12rem;
+    }
+
+    .burger {
+        margin-top: 1.7rem;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .arrow {
+        width: 6rem;
+        height: 6rem;
+        margin-top: -4rem;
+        left: 85%;
+    }
+
+    .slider-dots {
+        margin-right: 4rem;
+    }
+
+    #second-sec p {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0.75rem;
+    }
+
+    .rightimg {
+        width: 18.75rem;
+        padding-top: 3rem;
+        margin-right: 2.2rem;
+    }
+
+    .block-cont {
+        width: 100%;
+        height: 7rem;
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    .blocks {
+        /* padding-left: 1rem;
+        padding-right: 1rem; */
+        margin-bottom: 3rem;
+        /* height: 12.5rem; */
+    }
+
+    .small-block-cont {
+        display: flex;
+        width: 100%;
+    }
+
+    /* .small-blocks {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } */
+
+    img#arrowimg {
+        width: 2.5rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+    }
+
+    /* .block-cont p {
+        margin-top: 0.6rem;
+    } */
+
+    h3, .slider-text {
+        height: auto;
+        display: flex;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 613px) {
+    .rightimg {
+        margin-bottom: 2rem
+    }
+
+    .burger {
+        margin-top: 1.5rem;
+    }
+
+    h3, .slider-text {
+        height: auto;
+        display: flex;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 50%;
+        margin-top: -5%;
+    }
+
+    img#arrowimg {
+        width: 2rem;
+    }
+
+    #dots {
+        width: 18px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .slider-dots {
+        margin-top: -1rem;
+    }
+    .arrow {
+        left: 60%;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .arrow {
+        width: 4rem;
+        height: 4rem;
+        margin-top: -3rem;
+        left: 60%;
+    }
+}
+
+/* @media screen and (max-width: 510px) {
+    .small-block-cont .text {
+        font-size: 12px;
+    }
+} */
+
+@media screen and (max-width: 500px) {
+    .arrow {
+        width: 4rem;
+        height: 4rem;
+        margin-top: -3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h3, .slider-text {
+        font-size: 1.2rem;
+        margin-top: -6%;
+    }
+
+    .block-cont {
+        width: 100%;
+        height: 7rem;
+        display: flex;
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    .arrow {
+        width: 4rem;
+        height: 4rem;
+        margin-top: -3rem;
+    }
+}
+
+/* @media screen and (max-width: 470px) {
+    .small-block-cont .text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .small-block-cont .text {
+        font-size: 8px;
+    }
+} */

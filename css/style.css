@@ -23,13 +23,13 @@ body {
 
 span {
     display: block;
-    height: 3px;
+    height: 0.188rem;
     background-color: #061C2C;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .navbar {
-    height: 170px;
+    height: 10.6rem;
 }
 
 nav {
@@ -41,7 +41,7 @@ nav {
 }
 
 .logo {
-    width: 220px;
+    width: 13.75rem;
 }
 
 .container {

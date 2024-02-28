@@ -374,8 +374,9 @@ h3, .slider-text {
 
     #second-sec p {
         width: 100%;
-        margin-left: 0;
+        /* margin-left: 0; */
         padding-left: 0.75rem;
+        padding-right: 3%;
     }
 
     .rightimg {
@@ -510,6 +511,47 @@ h3, .slider-text {
         width: 4rem;
         height: 4rem;
         margin-top: -3rem;
+    }
+
+    .slider:after {
+        display: none;
+    }
+
+    .slider:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 355px){
+    h3, .slider-text {
+        font-size: 1rem;
+        margin-top: -6%;
+    }
+
+    .rightimg {
+        margin-bottom: 2rem;
+        width: 14rem;
+        margin-right: 18%;
+    }
+
+    .arrow {
+        width: 3rem;
+        height: 3rem;
+        margin-top: -2.5rem;
+    }    
+}
+
+
+@media screen and (max-width: 300px){
+    .arrow {
+        left: 60%;
+        margin-left: 18%;
+    } 
+    
+    .rightimg {
+        margin-bottom: 2rem;
+        width: 14rem;
+        margin-right: 12%;
     }
 }
 
